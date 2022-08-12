@@ -1,0 +1,38 @@
+.features {
+  @include section;
+}
+
+.features__list {
+  @extend %reset-list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+  }
+}
+
+.features__item {
+  flex-basis: 450px;
+
+  @media screen and (min-width: 768px) {
+  flex-basis: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+flex-basis: 270px;
+}
+}
+
+.features__icons {
+  height: 120px;
+  background-color: var(--third-bg-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  @extend %flex-align;
+}
+
+.features__desc {
+  @include fonts(14px, 24px);
+}

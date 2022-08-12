@@ -1,0 +1,32 @@
+.hero__btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  min-height: 50px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  font-family: inherit;
+  @include fonts(16px, 30px, 700, 0.06em);
+
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--color-shadow);
+  border: none;
+
+  transition: background-color var(--animation-hover);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover);
+  }
+}
+
+
+
+
+
+
