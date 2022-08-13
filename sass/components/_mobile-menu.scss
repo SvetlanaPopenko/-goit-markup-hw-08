@@ -41,10 +41,7 @@
 }
 
 .mobile-list {
-    text-decoration: none;
-        color: currentColor;
-        line-height: 1.71;
-//   @extend %reset-list;
+  @extend %reset-list;
 }
 
 .mobile-list:first-child {
@@ -57,7 +54,8 @@
 
 .mobile-link {
   @extend %reset-link;
-}
+  }
+
 .mobile-socials-link {
   @extend %reset-link;
   display: flex;
