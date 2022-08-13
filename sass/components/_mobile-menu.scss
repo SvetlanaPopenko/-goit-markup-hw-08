@@ -52,4 +52,6 @@
   margin-bottom: 64px;
 }
 
-
+.mobile-link {
+  @extend %reset-link;
+}
