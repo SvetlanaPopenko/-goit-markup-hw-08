@@ -8,7 +8,7 @@
 }
 
 .header__logo {
-    color: var(--logo-color);
+  color: var(--logo-color);
 }
 
 .header__mail {
@@ -19,7 +19,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   @include fonts(14px, 16px, 500, 00.02em);
-  
+
   transition: color var(--animation-hover);
   &:hover,
   &:focus {
@@ -28,8 +28,8 @@
 }
 
 .header__phone {
-  @extend %reset-link; 
-  
+  @extend %reset-link;
+
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -44,8 +44,17 @@
 }
 
 .header__promo {
-  display: flex;
-  gap: 50px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+  }
 }
 
 .header__icon {
