@@ -36,7 +36,7 @@
   margin: -1px;
 }
 
-.section, .team {
+.section {
   padding-top: 94px;
   padding-right: 0;
   padding-bottom: 94px;
@@ -930,6 +930,14 @@ img {
 
 .team {
   background-color: var(--third-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__list {
