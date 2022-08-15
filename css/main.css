@@ -1249,7 +1249,17 @@ img {
 }
 
 .main__items {
-  --items: 3;
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .main__items {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__items {
+    --items: 3;
+  }
 }
 
 .main__content {
