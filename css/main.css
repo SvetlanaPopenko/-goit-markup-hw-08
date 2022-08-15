@@ -848,10 +848,10 @@ img {
   padding-bottom: 200px;
   background-color: var(--secondary-bg-color);
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
 }
 
 .features {
@@ -1018,8 +1018,22 @@ img {
   gap: var(--indent);
 }
 
+.clients__item {
+  --items: 2;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    --items: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    --items: 6;
+  }
+}
+
 .clients__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid var(--socials-color);
   border-radius: 4px;
