@@ -20,9 +20,14 @@
 }
 .title {
   color: var(--title-text-color);
-  @include fonts(36px, 42px, 700);
+  @include fonts(28px, 33px, 700);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width:1200px) {
+    @include fonts(36px, 42px, 700);
+    margin-bottom: 50px;
+  }
 }
 .team__subtitle {
   margin-bottom: 10px;
