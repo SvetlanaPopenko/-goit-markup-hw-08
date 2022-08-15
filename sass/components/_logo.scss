@@ -5,18 +5,27 @@
   padding-bottom: 24px;
   margin-right: 93px;
   font-family: var(--secondary-font);
-  @include fonts(26px, 31px, 700);
+  @include fonts(24px, 28px, 700);
   color: var(--accent-color);
-}
+
+  @media screen and (max-width:1199px){
+    text-align: center;
+  }
+
+  @media screen and (min-width:1200px) {
+    @include fonts(26px, 31px, 700);
+  }
+  }
 
 .logo__footer {
   color: var(--main-white-color);
 }
 
 .logo--white {
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   margin-bottom: 20px;
-}
+  }
 
 
