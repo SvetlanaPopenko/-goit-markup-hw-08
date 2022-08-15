@@ -4,6 +4,7 @@
 
 .features__list {
   @extend %reset-list;
+  
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -15,9 +16,16 @@
 .features__item {
   flex-basis: 450px;
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+        margin-bottom: var(--indent);
+      }
+  }
+ 
+
   @media screen and (min-width: 768px) {
   flex-basis: 354px;
-  }
+   }
 
   @media screen and (min-width: 1200px) {
 flex-basis: 270px;

@@ -1,5 +1,5 @@
 .section {
-@extend %section;
+@include section;
 } 
 .clients {
   @extend %reset-list;

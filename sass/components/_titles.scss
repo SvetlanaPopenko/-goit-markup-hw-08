@@ -13,6 +13,10 @@
   @include fonts(14px, 16px, 700);
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .title {
   color: var(--title-text-color);
