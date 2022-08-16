@@ -2,12 +2,18 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+  width: 360px;
   color: var(--main-white-color);
-  @include fonts(44px, 60px, 900, 0.06em);
+  @include fonts(26px, 42px, 900, 0.06em);
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+  @include fonts(44px, 60px, 900, 0.06em);
+  width: 696px;
 }
+}
+
 .features__subtitle {
   color: var(--title-text-color);
   @include fonts(14px, 16px, 700);
