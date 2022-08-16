@@ -29,10 +29,19 @@
     <!-- Header section -->
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a class="logo" href="./index.html" lang="en"
-            >Web<span class="header__logo">Studio</span></a
+        <a class="logo" href="./index.html" lang="en">
+          Web<span class="header__logo">Studio</span></a
+        >
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студія</a>
@@ -48,11 +57,7 @@
           </ul>
         </nav>
         <div class="header__promo">
-          <a
-            class="header__mail"
-            lang="en"
-            href="mailto:info@devstudio.com"
-          >
+          <a class="header__mail" lang="en" href="mailto:info@devstudio.com">
             <svg class="header__icon" width="16" height="12">
               <use href="./images/icons.svg#mail"></use>
             </svg>
@@ -94,18 +99,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-1_lg@1x.webp 1x, ./images/portfolio/img-1_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-1_lg@1x.jpg 1x, ./images/portfolio/img-1_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-1_md@1x.webp 1x, ./images/portfolio/img-1_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-1_md@1x.jpg 1x, ./images/portfolio/img-1_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-1_sm@1x.webp 1x, ./images/portfolio/img-1_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-1_sm@1x.jpg 1x, ./images/portfolio/img-1_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-1_sm@1x.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_lg@1x.webp 1x,
+                        ./images/portfolio/img-1_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_lg@1x.jpg 1x,
+                        ./images/portfolio/img-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1_md@1x.webp 1x,
+                        ./images/portfolio/img-1_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1_md@1x.jpg 1x,
+                        ./images/portfolio/img-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_sm@1x.webp 1x,
+                        ./images/portfolio/img-1_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_sm@1x.jpg 1x,
+                        ./images/portfolio/img-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-1_sm@1x.jpg"
+                      alt="Технокряк"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -126,18 +171,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-2_lg@1x.webp 1x, ./images/portfolio/img-2_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-2_lg@1x.jpg 1x, ./images/portfolio/img-2_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-2_md@1x.webp 1x, ./images/portfolio/img-2_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-2_md@1x.jpg 1x, ./images/portfolio/img-2_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-2_sm@1x.webp 1x, ./images/portfolio/img-2_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-2_sm@1x.jpg 1x, ./images/portfolio/img-2_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-2_sm@1x.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_lg@1x.webp 1x,
+                        ./images/portfolio/img-2_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_lg@1x.jpg 1x,
+                        ./images/portfolio/img-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2_md@1x.webp 1x,
+                        ./images/portfolio/img-2_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2_md@1x.jpg 1x,
+                        ./images/portfolio/img-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_sm@1x.webp 1x,
+                        ./images/portfolio/img-2_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_sm@1x.jpg 1x,
+                        ./images/portfolio/img-2_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-2_sm@1x.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -160,18 +245,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-3_lg@1x.webp 1x, ./images/portfolio/img-3_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-3_lg@1x.jpg 1x, ./images/portfolio/img-3_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-3_md@1x.webp 1x, ./images/portfolio/img-3_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-3_md@1x.jpg 1x, ./images/portfolio/img-3_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-3_sm@1x.webp 1x, ./images/portfolio/img-3_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-3_sm@1x.jpg 1x, ./images/portfolio/img-3_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-3_sm@1x.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_lg@1x.webp 1x,
+                        ./images/portfolio/img-3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_lg@1x.jpg 1x,
+                        ./images/portfolio/img-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3_md@1x.webp 1x,
+                        ./images/portfolio/img-3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3_md@1x.jpg 1x,
+                        ./images/portfolio/img-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_sm@1x.webp 1x,
+                        ./images/portfolio/img-3_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_sm@1x.jpg 1x,
+                        ./images/portfolio/img-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-3_sm@1x.jpg"
+                      alt="Ресторан Seafood"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -194,18 +319,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-4_lg@1x.webp 1x, ./images/portfolio/img-4_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-4_lg@1x.jpg 1x, ./images/portfolio/img-4_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-4_md@1x.webp 1x, ./images/portfolio/img-4_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-4_md@1x.jpg 1x, ./images/portfolio/img-4_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-4_sm@1x.webp 1x, ./images/portfolio/img-4_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-4_sm@1x.jpg 1x, ./images/portfolio/img-4_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-4_sm@1x.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_lg@1x.webp 1x,
+                        ./images/portfolio/img-4_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_lg@1x.jpg 1x,
+                        ./images/portfolio/img-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4_md@1x.webp 1x,
+                        ./images/portfolio/img-4_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4_md@1x.jpg 1x,
+                        ./images/portfolio/img-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_sm@1x.webp 1x,
+                        ./images/portfolio/img-4_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_sm@1x.jpg 1x,
+                        ./images/portfolio/img-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-4_sm@1x.jpg"
+                      alt="Проєкт Prime"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -228,18 +393,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-5_lg@1x.webp 1x, ./images/portfolio/img-5_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-5_lg@1x.jpg 1x, ./images/portfolio/img-5_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-5_md@1x.webp 1x, ./images/portfolio/img-5_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-5_md@1x.jpg 1x, ./images/portfolio/img-5_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-5_sm@1x.webp 1x, ./images/portfolio/img-5_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-5_sm@1x.jpg 1x, ./images/portfolio/img-5_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-5_sm@1x.jpg"
-                    alt="Проєкт Boxes"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_lg@1x.webp 1x,
+                        ./images/portfolio/img-5_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_lg@1x.jpg 1x,
+                        ./images/portfolio/img-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5_md@1x.webp 1x,
+                        ./images/portfolio/img-5_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5_md@1x.jpg 1x,
+                        ./images/portfolio/img-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_sm@1x.webp 1x,
+                        ./images/portfolio/img-5_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_sm@1x.jpg 1x,
+                        ./images/portfolio/img-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-5_sm@1x.jpg"
+                      alt="Проєкт Boxes"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -262,18 +467,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-6_lg@1x.webp 1x, ./images/portfolio/img-6_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-6_lg@1x.jpg 1x, ./images/portfolio/img-6_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-6_md@1x.webp 1x, ./images/portfolio/img-6_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-6_md@1x.jpg 1x, ./images/portfolio/img-6_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-6_sm@1x.webp 1x, ./images/portfolio/img-6_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-6_sm@1x.jpg 1x, ./images/portfolio/img-6_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-6_sm@1x.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_lg@1x.webp 1x,
+                        ./images/portfolio/img-6_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_lg@1x.jpg 1x,
+                        ./images/portfolio/img-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6_md@1x.webp 1x,
+                        ./images/portfolio/img-6_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6_md@1x.jpg 1x,
+                        ./images/portfolio/img-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_sm@1x.webp 1x,
+                        ./images/portfolio/img-6_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_sm@1x.jpg 1x,
+                        ./images/portfolio/img-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-6_sm@1x.jpg"
+                      alt="Inspiration has no Borders"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -296,18 +541,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-7_lg@1x.webp 1x, ./images/portfolio/img-7_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-7_lg@1x.jpg 1x, ./images/portfolio/img-7_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-7_md@1x.webp 1x, ./images/portfolio/img-7_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-7_md@1x.jpg 1x, ./images/portfolio/img-7_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-7_sm@1x.webp 1x, ./images/portfolio/img-7_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-7_sm@1x.jpg 1x, ./images/portfolio/img-7_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-7_sm@1x.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_lg@1x.webp 1x,
+                        ./images/portfolio/img-7_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_lg@1x.jpg 1x,
+                        ./images/portfolio/img-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7_md@1x.webp 1x,
+                        ./images/portfolio/img-7_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7_md@1x.jpg 1x,
+                        ./images/portfolio/img-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_sm@1x.webp 1x,
+                        ./images/portfolio/img-7_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_sm@1x.jpg 1x,
+                        ./images/portfolio/img-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-7_sm@1x.jpg"
+                      alt="Видання Limited Edition"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -330,18 +615,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-8_lg@1x.webp 1x, ./images/portfolio/img-8_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-8_lg@1x.jpg 1x, ./images/portfolio/img-8_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-8_md@1x.webp 1x, ./images/portfolio/img-8_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-8_md@1x.jpg 1x, ./images/portfolio/img-8_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-8_sm@1x.webp 1x, ./images/portfolio/img-8_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-8_sm@1x.jpg 1x, ./images/portfolio/img-8_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-8_sm@1x.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_lg@1x.webp 1x,
+                        ./images/portfolio/img-8_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_lg@1x.jpg 1x,
+                        ./images/portfolio/img-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8_md@1x.webp 1x,
+                        ./images/portfolio/img-8_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8_md@1x.jpg 1x,
+                        ./images/portfolio/img-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_sm@1x.webp 1x,
+                        ./images/portfolio/img-8_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_sm@1x.jpg 1x,
+                        ./images/portfolio/img-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-8_sm@1x.jpg"
+                      alt="Проєкт LAB"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -364,18 +689,58 @@
               <a class="main__content" href="">
                 <div class="main__tumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-9_lg@1x.webp 1x, ./images/portfolio/img-9_lg@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-9_lg@1x.jpg 1x, ./images/portfolio/img-9_lg@2x.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-9_md@1x.webp 1x, ./images/portfolio/img-9_md@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-9_md@1x.jpg 1x, ./images/portfolio/img-9_md@2x.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-9_sm@1x.webp 1x, ./images/portfolio/img-9_sm@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./images/portfolio/img-9_sm@1x.jpg 1x, ./images/portfolio/img-9_sm@2x.jpg 2x" type="image/jpg">
-                  <img
-                    src="./images/portfolio/img-9_sm@1x.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9_lg@1x.webp 1x,
+                        ./images/portfolio/img-9_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9_lg@1x.jpg 1x,
+                        ./images/portfolio/img-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9_md@1x.webp 1x,
+                        ./images/portfolio/img-9_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9_md@1x.jpg 1x,
+                        ./images/portfolio/img-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9_sm@1x.webp 1x,
+                        ./images/portfolio/img-9_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9_sm@1x.jpg 1x,
+                        ./images/portfolio/img-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img-9_sm@1x.jpg"
+                      alt="Growing Business"
+                    />
                   </picture>
                   <div class="overlay">
                     <p class="overlay__text">
@@ -400,18 +765,29 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__left-side">
-          <a class="logo logo--white" href="./index.html" lang="en">Web<span class="logo__footer">Studio</span></a>
+          <a class="logo logo--white" href="./index.html" lang="en"
+            >Web<span class="logo__footer">Studio</span></a
+          >
           <address class="footer__address">
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="https://goo.gl/maps/xd88WJ3FPj6KiwVW9" target="_blank"
-                  rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a>
+                <a
+                  class="footer__link"
+                  href="https://goo.gl/maps/xd88WJ3FPj6KiwVW9"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__mail" lang="en" href="mailto:info@example.com">info@example.com</a>
+                <a class="footer__mail" lang="en" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__phone" lang="en" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="footer__phone" lang="en" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -420,32 +796,52 @@
           <h3 class="footer__header">Приєднуйтесь</h3>
           <ul class="socials">
             <li class="socials__item">
-              <a class="socials__link link--black" href="" target="_blank" rel="noopener noreferrer"
-                aria-label="instagram">
+              <a
+                class="socials__link link--black"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="socials__link link--black" href="" target="_blank" rel="noopener noreferrer"
-                aria-label="twitter">
+              <a
+                class="socials__link link--black"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link link--black" href="" target="_blank" rel="noopener noreferrer"
-                aria-label="facebook">
+              <a
+                class="socials__link link--black"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link link--black" href="" target="_blank" rel="noopener noreferrer"
-                aria-label="linkedin">
+              <a
+                class="socials__link link--black"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
@@ -458,7 +854,14 @@
           <form class="contact-form" autocomplete="off">
             <div class="contact-form__wrap">
               <label class="contact-form__label">
-                <input class="contact-form__input" type="email" name="email" id="" placeholder="E-mail" required />
+                <input
+                  class="contact-form__input"
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="E-mail"
+                  required
+                />
               </label>
               <button type="submit" class="footer__btn">
                 Підписатися
