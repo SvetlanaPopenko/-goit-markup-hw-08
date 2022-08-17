@@ -133,9 +133,9 @@ img {
   min-width: 200px;
   min-height: 50px;
   padding-top: 10px;
-  padding-right: 32px;
+  padding-right: 24px;
   padding-bottom: 10px;
-  padding-left: 32px;
+  padding-left: 24px;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
@@ -153,6 +153,12 @@ img {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--btn-hover);
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .card-set {
@@ -891,11 +897,11 @@ img {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--secondary-bg-color);
   text-align: center;
   background-repeat: no-repeat;
@@ -924,6 +930,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_lg@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_lg@1x.jpg);
   }

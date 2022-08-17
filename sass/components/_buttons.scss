@@ -4,9 +4,9 @@
   min-width: 200px;
   min-height: 50px;
   padding-top: 10px;
-  padding-right: 32px;
+  padding-right: 24px;
   padding-bottom: 10px;
-  padding-left: 32px;
+  padding-left: 24px;
   font-family: inherit;
   @include fonts(16px, 30px, 700, 0.06em);
 
@@ -22,6 +22,11 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hover);
+  }
+
+  @media screen and (min-width:1200px) {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
