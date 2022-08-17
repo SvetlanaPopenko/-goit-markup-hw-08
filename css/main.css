@@ -92,9 +92,8 @@ img {
 
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: var(--secondary-font);
   font-size: 24px;
   line-height: 1.17;
@@ -107,12 +106,22 @@ img {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
   }
 }
 
@@ -470,7 +479,7 @@ img {
           user-select: none;
   text-underline-position: under;
 }
-@media screen and (min-width) {
+@media screen and (min-width: 1200px) {
   .form__text {
     font-size: 14px;
     line-height: 1.71;
@@ -693,11 +702,11 @@ img {
           transform: translateX(0);
 }
 
-.mobile-nav:first-child {
-  margin-bottom: auto;
+.mobile-nav {
+  margin-bottom: 164px;
 }
 
-.mobile-nav__item {
+.mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -1193,15 +1202,16 @@ img {
 }
 
 .footer__container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 60px;
 }
 @media screen and (max-width: 767px) {
   .footer__container {
@@ -1209,7 +1219,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1223,6 +1232,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
