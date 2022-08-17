@@ -1211,7 +1211,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
 }
 @media screen and (max-width: 767px) {
   .footer__container {
@@ -1219,6 +1218,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1251,7 +1251,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__left-side {
-    margin-right: 90px;
+    margin-right: 70px;
     text-align: left;
   }
 }
