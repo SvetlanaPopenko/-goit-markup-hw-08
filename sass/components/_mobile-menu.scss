@@ -74,13 +74,10 @@
 
 .mobile-nav {
   @extend %reset-list;
+  margin-bottom: 164px;
 }
 
-.mobile-nav:first-child {
-  margin-bottom: auto;
-}
-
-.mobile-nav__item {
+.mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .mobile-nav__link {
