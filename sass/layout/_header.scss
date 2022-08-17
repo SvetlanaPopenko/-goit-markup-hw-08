@@ -18,13 +18,22 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  @include fonts(14px, 16px, 500, 00.02em);
+  @include fonts(12px, 14px, 500, 00.02em);
 
   transition: color var(--animation-hover);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      @include fonts(14px, 16px, 500, 0.02em);
+    }
 }
 
 .header__phone {
@@ -34,12 +43,20 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  @include fonts(14px, 16px, 500, 0.02em);
+  @include fonts(12px, 14px, 500, 0.02em);
 
   transition: color var(--animation-hover);
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(14px, 16px, 500, 0.02em);
   }
 }
 
@@ -49,6 +66,8 @@
   }
   @media screen and (min-width: 768px) {
     display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
