@@ -5,7 +5,7 @@
 }
 
 .footer__container {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
 
@@ -21,7 +21,7 @@
 
   @media screen and (min-width: 1200px) {
     align-items: baseline;
-  }
+    }
 }
 
 .footer__left-side {
@@ -32,7 +32,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 70px;
+    margin-right: 90px;
     text-align: left;
   }
 }
