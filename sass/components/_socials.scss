@@ -3,7 +3,9 @@
   
   @extend %flex-align;
   gap: 10px;
+}
 
+.socials--black{
   @media screen and (min-width:1200px) {
     justify-content: flex-start;
   }

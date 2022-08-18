@@ -276,8 +276,9 @@ img {
 .socials {
   gap: 10px;
 }
+
 @media screen and (min-width: 1200px) {
-  .socials {
+  .socials--black {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1259,7 +1260,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer__left-side {
-    width: 40%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1321,7 +1322,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer__right-side {
-    width: 40%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 1200px) {
