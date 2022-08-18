@@ -8,11 +8,12 @@
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     gap: 12px;
+    justify-content: flex-start;
   }
 }
 
 .contact-form__input {
-  width: 100%;
+ 
   padding: 15px 16px;
   background-color: inherit;
   @include fonts(16px, 20px);
@@ -24,11 +25,17 @@
   filter: drop-shadow(0px 4px 4px var(--color-shadow));
   border-radius: 4px;
 
+ @media screen and (max-width: 767px) {
+  width: 100%;
+ }
+
   @media screen and (min-width: 1200px) {
     max-width: 358px;
   }
 }
 
 .contact-form__label {
-  width: 100%;
+  @media screen and (max-width: 767px) {
+      width: 100%;
+    }
 }

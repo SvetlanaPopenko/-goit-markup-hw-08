@@ -28,14 +28,15 @@
 }
 
 .footer__left-side {
+  width: 100%;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    margin-right: 120px;
+   width: 50%;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 70px;
+    width: 25.3%;
     text-align: left;
   }
 }
@@ -92,8 +93,14 @@
 }
 
 .footer__right-side {
+  width: 100%;
+
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+      width: 50%;
+    }
+
+  @media screen and (min-width: 1200px) {
+    width: 25%;
   }
 }
 
@@ -132,4 +139,11 @@
 
 .footer__form {
   width: 100%;
+  @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 48.7%;
+    }
 }
