@@ -1,15 +1,14 @@
 .socials {
   @extend %reset-list;
-  
+
   @extend %flex-align;
   gap: 10px;
 }
 
-.socials--black{
-  @media screen and (min-width:1200px) {
+.socials--black {
+  @media screen and (min-width: 1200px) {
     justify-content: flex-start;
   }
-  
 }
 
 .socials__link {
@@ -24,7 +23,7 @@
 
   transition: color var(--animation-hover),
     background-color var(--animation-hover);
-    
+
   &:hover,
   &:focus {
     color: var(--main-white-color);

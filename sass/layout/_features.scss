@@ -1,10 +1,9 @@
 .features {
-    @include section;
+  @include section;
 }
 
 .features__list {
   @extend %reset-list;
-  
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -18,18 +17,17 @@
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
-        margin-bottom: var(--indent);
-      }
+      margin-bottom: var(--indent);
+    }
   }
- 
 
   @media screen and (min-width: 768px) {
-  flex-basis: 354px;
-   }
+    flex-basis: 354px;
+  }
 
   @media screen and (min-width: 1200px) {
-flex-basis: 270px;
-}
+    flex-basis: 270px;
+  }
 }
 
 .features__icons {

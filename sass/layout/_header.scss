@@ -31,10 +31,10 @@
     margin-bottom: 10px;
   }
 
-    @media screen and (min-width: 1200px) {
-      @include fonts(14px, 16px, 500, 0.02em);
-      margin-bottom: 0;
-    }
+  @media screen and (min-width: 1200px) {
+    @include fonts(14px, 16px, 500, 0.02em);
+    margin-bottom: 0;
+  }
 }
 
 .header__phone {

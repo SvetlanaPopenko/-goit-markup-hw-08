@@ -7,23 +7,23 @@
   @include fonts(24px, 28px, 700);
   color: var(--accent-color);
 
-  @media screen and (max-width:1199px){
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 
-    @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 26px;
-      padding-bottom: 26px;
-      margin-right: 87px;
-    }
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     @include fonts(26px, 31px, 700);
     padding-top: 24px;
-      padding-bottom: 24px;
-      margin-right: 93px;
+    padding-bottom: 24px;
+    margin-right: 93px;
   }
-  }
+}
 
 .logo__footer {
   color: var(--main-white-color);
@@ -34,6 +34,4 @@
   margin-right: auto;
   padding: 0;
   margin-bottom: 20px;
-  }
-
-
+}

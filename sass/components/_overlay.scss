@@ -13,7 +13,7 @@
   transition: transform var(--animation-hover);
 
   .main__content:hover & {
-  transform: translateY(0);
+    transform: translateY(0);
   }
 }
 

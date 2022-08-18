@@ -69,7 +69,6 @@
   transition: border-color var(--animation-hover);
   resize: none;
   height: 120px;
-  
 
   &:focus-within,
   &:hover {
@@ -111,7 +110,7 @@
   user-select: none;
   text-underline-position: under;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     @include fonts(14px, 24px);
   }
 }

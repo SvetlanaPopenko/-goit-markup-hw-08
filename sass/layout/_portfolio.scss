@@ -12,16 +12,15 @@
     justify-content: flex-start;
   }
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
 .main__items {
- 
   @extend %reset-list;
   --items: 1;
 
@@ -65,8 +64,7 @@
   padding-left: 24px;
   border: 1px solid var(--border-footer-color);
   border-top: none;
-
-  }
+}
 
 .main__service {
   color: var(--title-text-color);
